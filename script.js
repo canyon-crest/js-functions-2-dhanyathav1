@@ -101,7 +101,7 @@ function distance(x1, y1, x2, y2) {
   let yDist = (y2 - y1) ** 2;
   let sum = xDist + yDist;
   let dist = Math.sqrt(sum);
-  return parseFloat(dist.toFixed(2));
+  return dist.toFixed(2);
 }
 
 
@@ -118,7 +118,7 @@ function tipCalc(bill, tipPercent) {
   // Write your code here
   let tip = parseFloat(bill) * (parseFloat(tipPercent) / 100);
   let total = bill + tip;
-  return parseFloat(total.toFixed(2));
+  return total.toFixed(2);
 }
 
 
