@@ -79,9 +79,7 @@ function getRandomNum(max) {
 
 function myAdder(x, y) {
   // Write your code here
-  let x = parseFloat(x);
-  let y = parseFloat(y);
-  return x + y;
+  return parseFloat(x) + parseFloat(y);
 }
 
 
@@ -103,7 +101,7 @@ function distance(x1, y1, x2, y2) {
   let yDist = (y2 - y1) ** 2;
   let sum = xDist + yDist;
   let dist = Math.sqrt(sum);
-  return dist.toFixed(2);
+  return parseFloat(dist.toFixed(2));
 }
 
 
@@ -118,9 +116,9 @@ function distance(x1, y1, x2, y2) {
 
 function tipCalc(bill, tipPercent) {
   // Write your code here
-  let tip = bill * (tipPercent / 100);
+  let tip = parseFloat(bill) * (parseFloat(tipPercent) / 100);
   let total = bill + tip;
-  return total.toFixed(2);
+  return parseFloat(total.toFixed(2));
 }
 
 
